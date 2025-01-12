@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.6"/>
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\CardProcessing.Application\CardProcessing.Application.csproj" />
+      <ProjectReference Include="..\CardProcessing.Infrastructure\CardProcessing.Infrastructure.csproj" />
+      <ProjectReference Include="..\CardProcessing.Service.Contract\CardProcessing.Service.Contract.csproj" />
+      <ProjectReference Include="..\Common.Service\Common.Service.csproj" />
+      <ProjectReference Include="..\Common.Validation.FluentValidation\Common.Validation.FluentValidation.csproj" />
+    </ItemGroup>
+
+</Project>
